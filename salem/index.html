@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      Salem office - Автоматизируй свои процессы | Электронный документооборот
+      (ЭДО)
+    </title>
+    <link rel="icon" type="image/svg" href="/assets/images/icons/Слой 2.png" />
+    <meta
+      name="keywords"
+      content="документооборот рк, документооборот Казахстан, документооборот, система документооборота, программа для документов"
+    />
+    <meta
+      name="description"
+      content="Salem office - казахстанская программа надежное решение для эффективного и безопасного документооборота."
+    />
+    <meta
+      property="og:title"
+      content="Salem office - Автоматизируй свои процессы | Электронный документооборот(ЭДО)"
+    />
+    <meta
+      property="og:description"
+      content="Salem office - казахстанская программа, надежное решение для эффективного и безопасного документооборота."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://salemoffice.kz/" />
+    <meta
+      property="og:site_name"
+      content="Salem office - Электронный документооборот(ЭДО)"
+    />
+    <meta
+      property="og:image"
+      content="https://salemoffice.kz/assets/images/icons/logow.png"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="header-nav">
+        <div>
+          <a href="#"
+            ><img
+              src="./assets/images/icons/лого (1).png"
+              style="max-width: 145px"
+              alt="logo"
+          /></a>
+        </div>
+        <div class="header-nav__item">
+          <ul class="header-nav__list">
+            <a href="#" onclick="changeFirst()"><li>Главная</li></a>
+            <a href="#" onclick="changeSec()"><li>Модули</li></a>
+            <a href="#" onclick="changeThree()"><li>О продукте</li></a>
+            <a href="#" onclick="changeFourth()"><li>Отзывы</li></a>
+            <a href="#" onclick="changeFive()"><li>Наши клиенты</li></a>
+            <a href="#" onclick="changeSixth()"><li>Документы</li></a>
+            <a href="#" onclick="changeSeventh()"><li>О нас</li></a>
+            <a href="#" onclick="changeEith()"><li>Напишите нам</li></a>
+            <a href="#" onclick="changeNine()"><li>Контакты</li></a>
+          </ul>
+          <div class="header-nav__item">
+            <a href="https://salemoffice.kz/sign-in"
+              ><button class="header-nav__login">Войти</button></a
+            >
+          </div>
+        </div>
+      </nav>
+      <div class="burger" id="burger"><div></div></div>
+      <nav class="header-nav-mob" id="mobMenu">
+        <div>
+          <a href="#"
+            ><img src="./assets/images/icons/лого (1).png" alt="logo"
+          /></a>
+        </div>
+        <div class="header-nav__item-mob">
+          <ul class="header-nav__list-mob">
+            <a href="#first" onclick="changeFirst(),closeMenu()"
+              ><li>Главная</li></a
+            >
+            <a href="#sec" onclick="changeSec(),closeMenu()"><li>Модули</li></a>
+            <a href="#three" onclick="changeThree(),closeMenu()"
+              ><li>О продукте</li></a
+            >
+            <a href="#four" onclick="changeFourth(),closeMenu()"
+              ><li>Отзывы</li></a
+            >
+            <a href="#five" onclick="changeFive(), closeMenu()"
+              ><li>Наши клиенты</li></a
+            >
+            <a href="#six" onclick="changeSixth(),closeMenu()"
+              ><li>Документы</li></a
+            >
+            <a href="#seven" onclick="changeSeventh(),closeMenu()"
+              ><li>О нас</li></a
+            >
+            <a href="#eith" onclick="changeEith(), closeMenu()"
+              ><li>Напишите нам</li></a
+            >
+            <a href="#footer" onclick="changeNine(),closeMenu()"
+              ><li>Контакты</li></a
+            >
+          </ul>
+        </div>
+        <div class="header-nav__item-mob">
+          <a href="https://salemoffice.kz/sign-in"
+            ><button class="header-nav__login">Войти</button></a
+          >
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <main class="content">
+        <div class="content-item isActive" id="first">
+          <div>
+            <h1 class="wrapper1-title">SALEM OFFICE</h1>
+            <div>
+              <p class="wrapper1-text">
+                На рынке IT Казахстана с 2015 года Собственники прав на
+                объект<br />
+                авторского права АИС «Sirius» с торговой маркой «Salem
+                Office»<br />
+                Состоим в Реестре доверенного программного обеспечения и<br />
+                продукции электронной промышленности РК<br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content-item">
+          <div class="second-item">
+            <div class="second-item__titles" id="sec">
+              <ul>
+                <li class="change active">
+                  <span>01</span>
+                  <p>ЭДО</p>
+                </li>
+
+                <li class="change">
+                  <span>02</span>
+                  <p>Договора</p>
+                </li>
+
+                <li class="change">
+                  <span>03</span>
+                  <p>Управление проектами</p>
+                </li>
+
+                <li class="change">
+                  <span>04</span>
+                  <p>Заявки</p>
+                </li>
+
+                <li class="change">
+                  <span>05</span>
+                  <p>Управление кадрами</p>
+                </li>
+              </ul>
+            </div>
+            <div class="second-item__contents">
+              <div class="second-item__content active">
+                Электронный документооборот (ЭДО) происходит через систему
+                оператора ЭДО, состоит в Реестре доверенного программного
+                обеспечения и продукции электронной промышленности РК. Одна
+                организация отправляет другой файл документа. Адресат получает
+                его через несколько секунд на своем ПК. Процесс можно сравнить с
+                электронной почтой. При передаче документа оператор
+                автоматически проверяет легитимность электронной подписи,
+                которой завизирован документ, и соответствие формата документа
+                требованиям законодательства. Если документ требует двусторонней
+                подписи, получатель также подписывает его электронной подписью
+                или отказывает в подписи и запрашивает корректировку. Движение
+                документа отправитель может отследить благодаря статусам:
+                «Отправлен», «Получен», «Подписан», «Отказано в подписи».
+              </div>
+              <div class="second-item__content">
+                1.Общий документооборот<br />
+                2. Внешний документооборот <br />3. Управление внутренней
+                нормативной документацией (ВНД) <br />4. Электронный архив<br />
+                5. Единая база данных документов <br />6. Упрощение поиска
+                документации
+              </div>
+              <div class="second-item__content">
+                1.Автоматическое обновление системы СЭД <br />
+                2. Настройку всех бизнес-процессов под ключ <br />
+                3. Поддержку по любым вопросам <br />
+                4. Обучение и консультирование сотрудников<br />
+              </div>
+              <div class="second-item__content">
+                Вместе с тем, наша компания готова развивать и разрабатывать
+                дополнительные возможности под бизнес процессы заказчика.
+                Разработка и внедрение дополнительного функционала оговариваются
+                индивидуально.
+              </div>
+              <div class="second-item__content">
+                Аудит и восстановление кадровой документации. Организация
+                кадрового учета с нуля. Кадровый электронный документооборот
+                помогает в создание, подписание, использование и хранение
+                работодателем, работником или лицом, поступающим на работу,
+                документов, связанных с работой, оформленных в электронном виде
+                без дублирования на бумажном носителе.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-item">
+          <div class="tree-item" id="three">
+            <div class="tree-item__text">
+              <h2>
+                Обменивайтесь документами<br />
+                в один клик
+              </h2>
+              <div class="video-flex">
+                <video src="./assets/videos/video.mp4" controls>
+                  <source src="https://www.youtube.com/watch?v=e-Zf6nKhAKw" />
+                </video>
+
+                <p>
+                  Дистанционный обмен документом, заверенных электронной
+                  подписью (ЭЦП), благодаря чему юридически считаются не
+                  копиями, а оригиналами. Отправка документом происходит
+                  практически мгновенно за счёт обмена информационными данными
+                  через оператора связи. Уникальность такого метода в том, что
+                  документ регистрируется лишь раз, принимая уникальный
+                  идентификатор в системе. В тот же момент это позволяет
+                  бесперебойно использовать один и тот же документ, не создавая
+                  дубликата.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-item white">
+          <div class="fouth-item" id="four">
+            <h3 class="fouth-item_titleBlock">Отзывы и нам доверяют</h3>
+            <div class="fouth-item__docs">
+              <div class="sixth-item__doc">
+                <img src="./assets/images/image 152.png" alt="doc" />
+              </div>
+              <div class="sixth-item__doc">
+                <img src="./assets/images/image 152.png" alt="doc" />
+              </div>
+              <div class="sixth-item__doc">
+                <img src="./assets/images/image 152.png" alt="doc" />
+              </div>
+              <div class="overlay" id="dark2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="content-item">
+          <div class="fifth-item" id="five">
+            <p class="fifth-item__titleBlock">Наши клиенты</p>
+            <ol>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+            </ol>
+          </div>
+        </div>
+        <div class="content-item white">
+          <div class="sixth-item" id="six">
+            <h5>Документы по программе и фирме</h5>
+            <div class="sixth-item__docs">
+              <!-- <div class="sixth-item__doc">
+                <div class="mask">
+                  <button>
+                    <img src="./assets/images/icons/Group 987.png" alt="eye" />
+                  </button>
+                </div>
+                <img src="./assets/images/6 (1).png" alt="doс" />
+              </div> -->
+              <div class="sixth-item__doc">
+                <div class="mask">
+                  <button>
+                    <!-- <img src="./assets/images/icons/Group 987.png" alt="eye" /> -->
+                  </button>
+                </div>
+                <img src="./assets/images/6.png" alt="doс" />
+              </div>
+              <div class="sixth-item__doc">
+                <div class="mask">
+                  <button>
+                    <!-- <img src="./assets/images/icons/Group 987.png" alt="eye" /> -->
+                  </button>
+                </div>
+                <img src="./assets/images/6 (2).png" alt="doс" />
+              </div>
+              <div class="sixth-item__doc">
+                <div class="mask">
+                  <button>
+                    <!-- <img src="./assets/images/icons/Group 987.png" alt="eye" /> -->
+                  </button>
+                </div>
+                <img src="./assets/images/6 (3).png" alt="doс" />
+              </div>
+              <div class="sixth-item__doc">
+                <div class="mask">
+                  <button>
+                    <!-- <img src="./assets/images/icons/Group 987.png" alt="eye" /> -->
+                  </button>
+                </div>
+                <img src="./assets/images/6 (4).png" alt="doс" />
+              </div>
+              <div class="overlay" id="dark"></div>
+            </div>
+          </div>
+        </div>
+        <div class="content-item white">
+          <div class="seventh-item" id="seven">
+            <h6 class="seventh-item__titleBlock">О нас</h6>
+            <p>
+              TOO “Somnium” – На рынке IT Казахстана с 2015 года. Собственник
+              прав на объект авторского права АИС “Sirius” с торговой маркой
+              “Salem Office”. Состоит в Реестре доверенного программного
+              обеспечения и продукции электронной промышленности РК. Прошли
+              испытания на соответствие требованиям информационной безопасности
+              РК.
+            </p>
+          </div>
+        </div>
+        <div class="content-item white">
+          <div class="eight-item" id="eith">
+            <div class="eight-item__left">
+              <h3 class="eight-item__left-titleBlock">Остались вопросы?</h3>
+              <p>
+                Если у вас остались вопросы по нашему продукту вы можете всегда
+                обратится к нам. Мы рассматриваем и отвечаем на все интересующие
+                вас вопросы. Поможем освоиться в нашей системе и подключим
+                персонального менеджера для настройки и обучения.
+              </p>
+            </div>
+            <div class="eight-item__right">
+              <form>
+                <input type="text" placeholder="Введите ваше имя" /> <br />
+                <input
+                  type="text"
+                  placeholder="Введите ваш номер телефона"
+                /><br />
+                <input type="text" placeholder="Текст сообщения" /><br />
+                <button>
+                  отправить
+                  <img src="./assets/images/icons/Line 33.png" alt="---\>" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="content-item">
+          <footer class="footer" id="footer">
+            <div class="footer-flex">
+              <div>
+                <img
+                  src="./assets/images/icons/лого (1).png"
+                  style="max-width: 145px"
+                  alt="logo"
+                />
+                <div class="footer-item">
+                  <a href="tel:+77075555585"><p>+7 707 555 5585</p></a>
+                  <a href="mailto:help@somniumllp.com"
+                    ><p>help@somniumllp.com</p></a
+                  >
+                  <a href="#">
+                    <p>
+                      Родниковая 1/1 БЦ Абат,<br />
+                      5 этаж 505 кабинет
+                    </p></a
+                  >
+                </div>
+              </div>
+
+              <div class="map">
+                <div id="map" class="yanmap"></div>
+              </div>
+            </div>
+            <div class="last-info">ТОО ”Salem Office ”. ©Алматы 2023</div>
+          </footer>
+        </div>
+      </main>
+      <div class="navigation">
+        <ul>
+          <li class="isActive"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"
+      type="text/javascript"
+    ></script>
+    <script id="script" src="./js/main.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://salemoffice.kz/"
+      }
+    </script>
+  </body>
+</html>
